@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chocomelo</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap");
+    </style>
   </head>
   <body>
     <header>
-      <h1>Bem-vindo ao Cardápio da Chocomelo</h1>
+      <h1>
+        Cardápio
+        <p class="chocomelo">Chocomelo</p>
+      </h1>
     </header>
 
-    <nav>
-      <ul>
-        <li><a class="nav-botao" href="#produtos">Produtos</a></li>
-        <li><a class="nav-botao" href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="botoes-menu">
+      <nav>
+        <ul>
+          <li><a class="nav-botao" href="#produtos">Produtos</a></li>
+          <li><a class="nav-botao" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <section id="produtos">
       <h2>Nossos Deliciosos Doces</h2>
@@ -27,14 +35,12 @@
           alt="Doce 1"
         />
         <h3>Bolo Vulcão de Ninho</h3>
-        <p>Preço: R$ 25,00</p>
+        <p class="price">Preço: R$ 25,00</p>
         <button class="comprar">
-          <a
-            class="botao--comprar"
-            target="_blank"
-            href="https://wa.link/r9up98"
-            >Comprar</a
-          >
+          <div class="botao--comprar">
+            <img src="./src/img/logo_whatsapp.png" />
+            <a target="_blank" href="https://wa.link/r9up98">Comprar</a>
+          </div>
         </button>
       </div>
 
@@ -42,17 +48,15 @@
         <img
           style="height: 300px"
           src="./src/img/bolo_vulcao_brig.png"
-          alt="Doce 3"
+          alt="Doce 2"
         />
         <h3>Bolo Vulcão de Brigadeiro (1kg)</h3>
-        <p>Preço: R$ 35,00</p>
+        <p class="price">Preço: R$ 35,00</p>
         <button class="comprar">
-          <a
-            class="botao--comprar"
-            target="_blank"
-            href="https://wa.link/be7wtm"
-            >Comprar</a
-          >
+          <div class="botao--comprar">
+            <img src="./src/img/logo_whatsapp.png" />
+            <a target="_blank" href="https://wa.link/be7wtm">Comprar</a>
+          </div>
         </button>
       </div>
 
@@ -60,17 +64,15 @@
         <img
           style="height: 300px"
           src="./src/img/bolo_pote6.jpg"
-          alt="Doce 2"
+          alt="Doce 3"
         />
         <h3>Bolo no Pote: Brigadeiro</h3>
-        <p>Preço: R$ 8,00</p>
+        <p class="price">Preço: R$ 8,00</p>
         <button class="comprar">
-          <a
-            class="botao--comprar"
-            target="_blank"
-            href="https://wa.link/firxcj"
-            >Comprar</a
-          >
+          <div class="botao--comprar">
+            <img src="./src/img/logo_whatsapp.png" />
+            <a target="_blank" href="https://wa.link/firxcj">Comprar</a>
+          </div>
         </button>
       </div>
 
@@ -78,32 +80,35 @@
         <img
           style="height: 300px"
           src="./src/img/bolo_pote7.jpg"
-          alt="Doce 3"
+          alt="Doce 4"
         />
         <h3>Bolo no Pote: Ninho</h3>
-        <p>Preço: R$ 8,00</p>
+        <p class="price">Preço: R$ 8,00</p>
         <button class="comprar">
-          <a
-            class="botao--comprar"
-            target="_blank"
-            href="https://wa.link/2hkmrg"
-            >Comprar</a
-          >
+          <div class="botao--comprar">
+            <img src="./src/img/logo_whatsapp.png" />
+            <a target="_blank" href="https://wa.link/2hkmrg">Comprar</a>
+          </div>
         </button>
       </div>
 
       <!-- Adicione mais produtos aqui -->
     </section>
 
-    <section id="contato">
-      <h2>Entre em Contato</h2>
-      <p>Para encomendas ou dúvidas, entre em contato conosco:</p>
-      <p>Telefone: (83) 99902-1754</p>
-      <p>Instagram: @chocomelojp</p>
-    </section>
-
     <footer>
-      <p>&copy; 2023 Chocomelo</p>
+      <section id="contato">
+        <h2>Nossos Redes Sociais</h2>
+        <p>Para encomendas ou dúvidas, entre em contato conosco:</p>
+        <p>Whatsapp: (83) 99902-1754</p>
+        <p class="link--ig">
+          Instagram:
+          <a
+            target="_blank"
+            href="https://www.instagram.com/chocomelojp/?utm_source=ig_web_button_share_sheet&igshid=ZDNlZDc0MzIxNw=="
+            >@chocomelojp</a
+          >
+        </p>
+      </section>
     </footer>
   </body>
 </html>
